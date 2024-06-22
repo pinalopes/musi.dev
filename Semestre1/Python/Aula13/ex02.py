@@ -1,0 +1,5 @@
+n=(input('Digite um número inteiro com três algarismos: '))
+inv=int(n[::-1])
+soma=(n)+(inv)
+print(f'O número inverso é: {inv}')
+print(f'A soma dos números é:{n}+{inv}={soma}')

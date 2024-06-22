@@ -1,0 +1,98 @@
+header{
+    background-color: rgb(51,51,51);
+    color: rgb( 255,255,255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+footer{
+    background-color: rgb(51,51,51);
+    color: rgb( 255,255,255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+h1{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+nav{
+    background-color: rgb(244,244,244);
+    color: rgb(51,51,51);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    text-align: center;
+    padding-right: 10px;
+}
+nav a{
+    color: rgb( 255,255,255);
+    color: rgb(51,51,51);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+nav a :hover{
+    background-color: rgb(221,221,221);
+}
+body{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: arial, sans-serif;
+}
+.produto{
+    border: solid 1px rgb(204,204,204);
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+.produto img{
+    width: 100%;
+}
+.novidade{
+    background-color: rgb(255,204,0);
+    color: rgb(51,51,51);
+}
+.mais_vendidos{
+    background-color: rgb(0,0,0);
+    color: rgb( 255,255,255);
+}
+#container{
+    width: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    grid-template-columns: 3;
+}
+.produto :hover{
+    transform: scale(1.1);
+}
+div{
+    margin-left: 200px;
+    margin-right: 200px;
+}
