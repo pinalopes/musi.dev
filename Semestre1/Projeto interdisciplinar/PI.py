@@ -31,3 +31,5 @@ elif opção==3:
         n=divisao
         lista.insert(0,resto)
         print(divisao,lista)
+else:
+    print('O número digitado não corresponde aos selecionados')
