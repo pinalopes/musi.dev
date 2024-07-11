@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musidev</title>
+    <style>
+            div#area{
+            background:  green;
+            border-radius: 10px;
+            width: 150px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            margin-left: 10px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com números</h1>
+    <div id="area"> Clique para calcular</div>
+    <div id="res">O resultado vem aqui...</div>
+
+    <script>
+        alert('Seja bem-vindo(a) ao meu site!')
+        var a=document.getElementById('area')
+        var res=document.getElementById('res')
+        a.addEventListener('click',clicar)
+        function clicar(){
+            var numero=Number(prompt('Digite um número:'))
+            metade=numero/2
+            dobro=numero*2
+            res.innerText=`O dobro de ${numero} é ${dobro} e a metade é ${metade}`
+        }
+    </script>
+</body>
+</html>

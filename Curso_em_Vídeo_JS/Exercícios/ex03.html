@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>musi.dev</title>
+    <style>
+        div{
+            background:  green;
+            border-radius: 10px;
+            width: 150px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com dados V1.0</h1>
+    <div id="area">Clique para começar</div>
+
+    <script>
+        var s=document.getElementById('area')
+        s.addEventListener('click', clicar)
+        function clicar(){
+            var nome=prompt('Qual o seu nome?')
+            alert(`Olá ${nome}, é um prazer!`)
+        }
+    </script>
+</body>
+</html>

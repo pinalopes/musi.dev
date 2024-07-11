@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>devmusi</title>
+    <style>
+        div#clique{
+            background:  green;
+            border-radius: 10px;
+            width: 150px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            margin-left: 10px;
+            margin-bottom: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Somando dois números</h1>
+    <div id="clique">Iniciar a soma</div>
+    <div id="res">O resultado vem aqui</div>
+
+    <script>
+        var a=document.getElementById('clique')
+        var res=document.getElementById('res')
+        a.addEventListener('click',clique)
+        function clique(){
+            var n1=Number(prompt('Digite um número '))
+            var n2=Number(prompt('Digite outro número '))
+            r= n1+n2
+            var numero1=n1
+            var numero2=n2
+            res.innerHTML=`<p>A soma de <mark>${n1}</mark> + <mark>${n2}</mark> é igual a <strong>${r}</strong></p>`
+        }
+
+    </script>
+</body>
+</html>

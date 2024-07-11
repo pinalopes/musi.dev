@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>musidev</title>
+    <style>
+          div#area{
+            background:  green;
+            border-radius: 10px;
+            width: 150px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            margin-left: 20px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com dados V2.0</h1>
+    <div id="area"> Clique para começar</div>
+    <div id="res">Aqui vai aparecer o resultado...</div>
+
+    <script>
+        var a=document.getElementById('area')
+        a.addEventListener('click' ,clicar)
+        function clicar(){
+            var nome=prompt('Qual o seu nome?')
+            res.innerText=(`Olá,${nome}! é um grande prazer te conhecer!`)
+        }
+    </script>
+</body>
+</html>

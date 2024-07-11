@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script externo</title>
+</head>
+<body>
+    <h1>Java Script externo</h1>
+    <input type="button" value="Ação 1" onclick="clq1()">
+    <input type="button" value="Ação 2" onclick="clq2()">
+    <input type="button" value="Ação 3" onclick="clq3()">
+    <input type="button" value="Ação 4" onclick="clq4()">
+<br>
+    <div id="res">Aqui vou registrar suas ações com os botões a cima</div>
+    <script>
+        let res=document.getElementById('res')
+        function clq1(){
+            res.innerHTML+=`<p>Clicou no primeiro botão</p>`
+        }
+        function clq2(){
+            res.innerHTML+=`<p>Clicou no segundo botão</p>`
+        }function clq3(){
+            res.innerHTML+=`<p>Clicou no terceiro botão</p>`
+        }function clq4(){
+            res.innerHTML+=`<p>Clicou no quarto botão</p>`
+        }
+    </script>
+</body>
+</html>

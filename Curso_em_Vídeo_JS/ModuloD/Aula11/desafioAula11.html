@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+<body>
+    <h1>Sistemas de nacionalidade</h1>
+    Nacionalidade:<input type="text" name="txtp" id="txtp">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular(){
+            var pais=document.getElementById('txtp')
+            var res=document.querySelector('div#res')
+            var p=(pais.value)
+            res.innerHTML=`<p>Vivendo em ${p}</p>`
+            if (p==='brasil'){//por ser uma string precisa colocar as aspas para não dar erro
+                res.innerHTML+=`<p>Você é <strong>BRASILEIRO</strong></p>`
+            }else{
+                res.innerHTML+=`<p>Você é <strong>ESTRANGEIRO</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>

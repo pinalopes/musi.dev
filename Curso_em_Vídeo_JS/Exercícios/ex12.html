@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O número é par ou ímpar?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>É par ou é ímpar?</h1>
+    <button onclick="teste()">Clique para iniciar</button>
+    <section id="result">
+        <p>O resultado vai aparecer aqui...</p>
+    </section>
+
+    <script>
+        function teste() {
+            let num = Number(window.prompt('Digite um número: '))
+            let tipo
+            if (num % 2 == 0) {
+                tipo = '<strong>PAR</strong>'
+            } else {
+                tipo = '<strong>ÍMPAR</strong>'
+            }
+
+            let res = document.querySelector('section#result')
+            res.innerHTML = `<p>O número ${num} que foi digitado é ${tipo}!</p>`
+        }
+    </script>
+</body>
+</html>

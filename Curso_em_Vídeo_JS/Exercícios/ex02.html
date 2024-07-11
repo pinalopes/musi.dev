@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>musidev</title>
+    <style>
+        div{
+            background:  green;
+            border-radius: 10px;
+            width: 110px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interagindo com um botão</h1>
+</body>
+    <div id="clicar">
+        Clica em mim!
+    </div>
+    <script>
+        var a=document.getElementById('clicar')
+        a.addEventListener('click' ,clicar)
+        function clicar(){
+            window.alert('Você clicou no botão')
+        }
+    </script>
+</html>
